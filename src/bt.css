@@ -1,0 +1,112 @@
+
+:root {
+    --mainColor: rgb(65, 29, 163);
+    --secondaryColor: rgb(255, 200, 0);
+}
+
+
+.this-will-test-container {
+    width: 100vw;
+    height: 90vh;
+    color: var(--mainColor);
+    background-color: var(--secondaryColor);
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,200,0,1) 10%, rgba(250,195,0,1) 22%,
+    rgba(240,195,0,1) 37%, rgba(240,205,0,1) 54%, rgba(240,210,0,1) 67%, rgba(240,215,0,1) 80%, 
+    rgba(240,220,0,1) 91%);
+}
+
+.dis-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.this-will-test {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-align {
+    width: 80%;
+}
+
+.button-container {
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-test {
+    width: 300px;
+    height: 300px;
+    border: 0px;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-test:hover {
+    background-color: rgb(54, 16, 156);
+    cursor: pointer;
+}
+
+.text-inside-button {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.end {
+    display: none;
+    opacity: 0;  
+    visibility: hidden;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+
+    .this-will-test-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .this-will-test {
+        height: 40%;
+    }
+
+    .button-container {
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .text-align {
+        font-size: 45px;
+    }
+
+    .start-test {
+        height: 250px;
+        width: 250px;
+        border-radius: 250px;
+    }
+}
+
+
+/* Media Queries*/

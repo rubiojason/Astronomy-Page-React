@@ -1,0 +1,73 @@
+
+:root {
+    --mainColor: rgb(65, 29, 163);
+    --secondaryColor: rgb(255, 200, 0);
+  }
+
+  .whole-page {
+      background-color: var(--secondaryColor);
+      background: linear-gradient(180deg, rgba(255,200,0,1) 10%, rgba(250,195,0,1) 22%,
+      rgba(240,195,0,1) 37%, rgba(240,205,0,1) 54%, rgba(240,210,0,1) 67%, rgba(240,215,0,1) 80%, 
+      rgba(240,220,0,1) 91%);;
+      height: 100vh;
+  }
+
+.result-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-container {
+    width: 70%;
+    height: 60vh;
+    /*background-color: rgb(218, 218, 218);*/
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result-content {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+
+.button-container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.go-article {
+    width: 300px;
+    height: 150px;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.go-images {
+    width: 300px;
+    height: 150px;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.result-page-button {
+    color: white;
+    font-size: 25px;
+}

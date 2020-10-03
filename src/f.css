@@ -1,0 +1,392 @@
+
+:root {
+  --mainColor: rgb(65, 29, 163);
+  --secondaryColor: rgb(255, 200, 0);
+}
+
+.App {
+  
+}
+
+body {
+  
+}
+
+
+/* NAV */
+
+nav {
+  display: inline-block;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--mainColor);
+  color: white;
+  display: flex;
+  position: relative;
+  box-shadow: 1px 1px 10px rgb(119, 0, 255);
+}
+
+.logo {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.logoTitle {
+  font-size: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 20px;
+  cursor: pointer;
+
+}
+
+ul {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+li {
+  height: 40px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondaryColor);
+
+  transform: scaleX(1);
+  transition: transform 200ms ease-in;
+}
+
+li:hover {
+  color: var(--secondaryColor);
+}
+
+li:hover::after {
+  transform: scaleX(.0);
+}
+
+.navTag {
+  list-style-type: none;
+}
+
+/* NAV */
+
+/* Title Card */
+
+.titleCard {
+  height: 150px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1.5px solid rgb(177, 177, 177);
+  box-shadow: 1px 1px 10px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleTitle {
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 500;
+}
+
+.byWho {
+  color: var(--mainColor);
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+
+/* Title Card */
+
+/* picture */
+
+.picture {
+  content: url("https://www.wallpaperup.com/uploads/wallpapers/2014/02/25/274518/9ce6a2f1ce763e8ef39bbf2c7220cab5.jpg");
+  display: inline-block;
+  width: 100%;
+  max-height: auto;
+}
+
+/* picture */
+
+/* text text */
+
+.marg {
+  margin: 100px;
+}
+
+.text {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.takeTest {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.takeTestButton {
+  width: 200px;
+  height: 100px;
+  background-color: var(--secondaryColor);
+  border: 0px solid var(--secondaryColor);
+  font-size: 25px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.takeTestButton:hover {
+  background-color: rgb(255, 190, 0);
+}
+
+.takeTestButton:focus {
+  outline: 2px;
+  height: 97px;
+  width: 197px;
+}
+
+.takeTestButton:after {
+  width: 200px;
+  height: 100px;
+}
+
+.contain-seconds {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.secondText {
+  width: 45%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+.secondImage {
+  background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/moon-tree_SB4BRFIBGE.jpg');
+  height: 500px;
+  width: 100%;
+}
+
+.second-image-container {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+}
+
+.comment {
+  width: auto;
+  height: 40px;
+  position: absolute;
+  color: black;
+  background-color: white;
+  opacity: .6;
+  border-radius: 10px;
+  padding: 0px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  bottom: 3%;
+  left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+/* text text */
+
+/* Bottom Nav Bottom Nav*/
+
+.bottomNav {
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  /*background-color: var(--mainColor);*/
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.bottomNav-sq1 {
+  height: 90%;
+  width: 47%;
+  display: grid;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(119, 0, 255);
+}
+
+.bottomNav-sq2 {
+  height: 90%;
+  width: 47%;
+  display: grid;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(119, 0, 255);
+}
+
+.linkTitle {
+  color: white;
+  width: 100%;
+  height: 40%;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  align-self: center;
+  text-align: center;
+}
+
+.align-text {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}
+
+.link a {
+  color: var(--secondaryColor);
+  font-size: 22px;
+  font-weight: 600;
+  width: 100%;
+  height: 30%;
+  font-family: fantasy;
+}
+
+.link a:hover {
+  color: rgb(255, 160, 0);
+}
+
+.sq2-sources {
+  color: var(--secondaryColor);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: fantasy;
+  width: 100%;
+  height: 30%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sq2-sources:hover {
+  color: rgb(255, 160, 0);
+}
+
+
+/* Bottom Nav Bottom Nav*/
+
+/* Media Queries */
+@media only screen and (max-width: 1400px) {
+  .contain-seconds {
+    flex-direction: column;
+  }
+
+  .secondText {
+    width: 100%;
+  }
+
+  .secondImage {
+    width: 80%;
+    margin-top: 50px;
+    object-fit: cover;
+  }
+
+  .second-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .bottomNav {
+    background-color: var(--mainColor);
+    flex-direction: column;
+  }
+
+  .bottomNav-sq1 {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+  .bottomNav-sq2 {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+  .link {
+    margin: 30px 0px;
+  }
+
+  .sq2-sources {
+    margin: 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .articleTitle {
+    font-size: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  .articleTitle {
+    font-size: 30px;
+  }
+
+  .logoTitle {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .logo {
+    width: 40%;
+  }
+
+  ul {
+    width: 60%;
+  }
+}
+/* Media Queries */

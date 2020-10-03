@@ -1,0 +1,334 @@
+
+:root {
+    --mainColor: rgb(65, 29, 163);
+    --secondaryColor: rgb(255, 200, 0);
+  }
+
+/* whole page */
+.test-div {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* whole page */
+
+
+/* indicator indicator */
+.indicator {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator-inner {
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator-content {
+    color: gray;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+/* indicator indicator */
+
+/* question/answer container */
+.test-box {
+    height: 615px;
+    width: 75vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+form {
+    height: 650px;
+    width: 75vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* the question */
+.question-box {
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.question-div {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.question {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* the question */
+
+/* the answers */
+
+label input {
+    display: none;
+}
+
+label span {
+    border: 2px solid black; 
+    width: 60px; 
+    height: 60px;
+    border-radius: 100%; 
+    background-color: white;
+    font-size: 20px; 
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input:checked + span {
+    background: rgb(23, 96, 231); 
+    border-color: rgb(23, 96, 231);
+    color: white;
+}
+
+
+label {
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+
+.answer-content {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 75px;
+
+}
+
+.answer-box {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-div {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+/* the answers */
+
+/* question/answer container */
+
+/* left button left button*/
+.next-back {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.back-button-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.back-button {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+    font-size: 18px;
+    opacity: 0;
+}
+/* left button left button*/
+
+/* middle-container middle-container */
+.content-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+
+.content {
+    width: 50px;
+    height: 50px;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* middle-container middle-container */
+
+/* right button right button */
+.next-button-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+    border: 0px;
+    font-size: 18px;
+}
+
+.next-button:hover {
+    background-color: rgb(255, 190, 0);
+}
+
+.next-button:focus {
+    outline: 0px;
+    width: 118px;
+    height: 58px;
+}
+
+.next-button::after {
+    width: 120px;
+    height: 60px;
+}
+/* right button right button */
+
+
+.dis {
+    display: none;   
+}
+
+.error-message {
+    width: 100%;
+    height: auto; 
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-bottom {
+    margin: 50px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .content-container {
+        width: 60%;
+    }
+
+    .back-button-container {
+        width: 5%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-container {
+        width: 85%;
+    }
+
+    .back-button-container {
+        width: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .back-button-container {
+        width: 0%;
+        height: 0%;
+    }
+
+    .next-back {
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    content-container {
+        width: 100%;
+    }
+    .back-button-container {
+        width: 0%;
+    }
+    .next-button-container {
+        width: 100%;
+    }
+
+    label span {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content-container {
+        width: 100%;
+    } 
+
+    label span {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+
+    .answer-content {
+        font-size: 23px;
+    }
+}
+
+
+/* Media Queries */
