@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Astronomy-Page-React/static/css/main.755d4339.chunk.css",
+    "main.js": "/Astronomy-Page-React/static/js/main.646a855a.chunk.js",
+    "main.js.map": "/Astronomy-Page-React/static/js/main.646a855a.chunk.js.map",
+    "runtime-main.js": "/Astronomy-Page-React/static/js/runtime-main.3d14fd9b.js",
+    "runtime-main.js.map": "/Astronomy-Page-React/static/js/runtime-main.3d14fd9b.js.map",
+    "static/js/2.06d3fdd5.chunk.js": "/Astronomy-Page-React/static/js/2.06d3fdd5.chunk.js",
+    "static/js/2.06d3fdd5.chunk.js.map": "/Astronomy-Page-React/static/js/2.06d3fdd5.chunk.js.map",
+    "index.html": "/Astronomy-Page-React/index.html",
+    "precache-manifest.edb9daea78420dead2bc207d6c9bf357.js": "/Astronomy-Page-React/precache-manifest.edb9daea78420dead2bc207d6c9bf357.js",
+    "service-worker.js": "/Astronomy-Page-React/service-worker.js",
+    "static/css/main.755d4339.chunk.css.map": "/Astronomy-Page-React/static/css/main.755d4339.chunk.css.map",
+    "static/js/2.06d3fdd5.chunk.js.LICENSE.txt": "/Astronomy-Page-React/static/js/2.06d3fdd5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d14fd9b.js",
+    "static/js/2.06d3fdd5.chunk.js",
+    "static/css/main.755d4339.chunk.css",
+    "static/js/main.646a855a.chunk.js"
+  ]
+}
